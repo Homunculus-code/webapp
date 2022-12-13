@@ -5,7 +5,7 @@ import axios from 'axios';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   axios
-  .get('http://localhost:3001/films')
+  .get('https://raw.githubusercontent.com/Homunculus-code/databaseforghibli/main/db.json/')
   .then(response => {
     const notes = response.data;
 ReactDOM.createRoot(document.getElementById('root')).render(<App notes={notes} />)
